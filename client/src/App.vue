@@ -19,6 +19,7 @@ onMounted( () => {
 </script>
 
 <template>
+  <h1>Student Sign-In</h1>
   <NewStudentForm>
 
   </NewStudentForm>
@@ -41,7 +42,9 @@ onMounted( () => {
 
 <style scoped>
 
-/* CSS for this component here */
+h1 {
+  margin: 10px;
+}
 
 
 </style>

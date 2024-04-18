@@ -14,7 +14,7 @@ app.use('/api', apiRoutes)
 
 app.use(function(req, res, next){
     // can't find a matching route
-    res.status(404).send('Sorry, not found')
+    res.status(404).send('Sorry, page not found')
 })
 
 

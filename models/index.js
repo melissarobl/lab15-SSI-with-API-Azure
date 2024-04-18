@@ -10,7 +10,10 @@ const env = process.env.NODE_ENV || 'development'
 // this set up lets same code connect to two different databases
 //if there is not a NODE_ENV set, like on your computer, we'll use the value 'development'
 
+const dbPassword = process.env.DB_PASSWORD
+
 const config = configJSON[env] //read configuration object for 'development' or 'production' for environment we have identified (value of env)
+config.password = dbPassword
 
 const sequelize = new Sequelize(config) //DB config
 
